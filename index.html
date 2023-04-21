@@ -249,7 +249,36 @@
                             </div>
                         </div>
                         <div class="contact__body">
-                            
+                            <div class="contact__form">
+                                <form class="form">
+                                    <div class="form__item">
+                                        <label for="name" class="form__title">
+                                            お名前
+                                            <span class="form__require">*必須</span>
+                                        </label>
+                                        <input type="text" id="name" name="name" required class="form__input">
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__item">
+                                            <label for="email" class="form__title">
+                                                メールアドレス
+                                                <span class="form__require">*必須</span>
+                                            </label>
+                                            <input type="text" id="email" name="email" required class="form__input">
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <label for="comment" class="form__title">
+                                            メッセージ
+                                            <span class="form__any">*任意</span>
+                                        </label>
+                                        <textarea id="comment" nama="comment" placeholder="ご自由にお書きください" class="form__TextArea"></textarea>
+                                    </div>
+                                    <div class="form__btn">
+                                        <button type="submit" class="btn">送信ボタンを押す</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -266,6 +295,8 @@
                     </div>
                 </div>
             </footer>
+            <!--top page-->
+            <div class="top-page"></div>
         </div>
         <script src="swiper/swiper-bundle.min.js"></script>
     </body>
