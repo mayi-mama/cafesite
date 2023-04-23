@@ -18,7 +18,7 @@
         <script src="js/script.js" defer></script>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper" ontouchstart="">
             <!--ヘッダー-->
             <header class="header">
                 <div class="header__inner">
@@ -81,7 +81,7 @@
                         <div class="about__body">
                             <div class="about__box">
                                 <div class="about__img">
-                                    <img src="img/about_design.jpg" alt="カフェでほっとひといき">
+                                    <img src="img/about2-1.jpg" alt="カフェでほっとひといき">
                                 </div>
                                 <div class="about__text">
                                     <p>
@@ -106,7 +106,7 @@
                                 <!--コーヒー-->
                                 <div class="menu__box">
                                     <div class="menu__box-img">
-                                        <img class="menu__img" src="img/coffee.jpg" alt="コーヒーの写真">
+                                        <img class="menu__img" src="img/coffee2.jpg" alt="コーヒーの写真">
                                     </div>
                                     <div class="menu__desc">
                                         <div class="menu__title">
@@ -189,7 +189,7 @@
                                 <!--マカロン-->
                                 <div class="menu__box">
                                     <div class="menu__box-img">
-                                        <img class=menu__img" src="img/macaron2.jpg" alt="マカロン">
+                                        <img class="menu__img" src="img/macaron2.jpg" alt="マカロン">
                                     </div>
                                     <div class="menu__desc">
                                         <div class="menu__title">
@@ -239,8 +239,9 @@
                                 </table>
                             </div>
                             <div class="shop__info">
+                                <!--google map-->
                                 <div class="shop__map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.533427002776!2d139.78150957430756!3d35.663865330930264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188970167cf6b3%3A0x682ee666a439be76!2z5pyI5bO26aeF!5e0!3m2!1sja!2sjp!4v1682063340593!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.533427002776!2d139.78150957430756!3d35.663865330930264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188970167cf6b3%3A0x682ee666a439be76!2z5pyI5bO26aeF!5e0!3m2!1sja!2sjp!4v1682235192859!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -265,20 +266,18 @@
                                         <input type="text" id="name" name="name" required class="form__input">
                                     </div>
                                     <div class="form__item">
-                                        <div class="form__item">
                                             <label for="email" class="form__title">
                                                 メールアドレス
                                                 <span class="form__require">*必須</span>
                                             </label>
                                             <input type="text" id="email" name="email" required class="form__input">
-                                        </div>
                                     </div>
                                     <div class="form__item">
                                         <label for="comment" class="form__title">
                                             メッセージ
                                             <span class="form__any">*任意</span>
                                         </label>
-                                        <textarea id="comment" nama="comment" placeholder="ご自由にお書きください" class="form__TextArea"></textarea>
+                                        <textarea id="comment" nama="comment" placeholder="ご自由にお書きください" class="form__textArea"></textarea>
                                     </div>
                                     <div class="form__btn">
                                         <button type="submit" class="btn">送信ボタンを押す</button>
