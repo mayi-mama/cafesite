@@ -349,8 +349,16 @@ img {
     height: 20px;
 }
 
+.facebook__icon{
+    color: #1778f2;
+	background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-
+.twitter__icon{
+    color: #1da1f2;
+}
 
 /*copyright*/
 .copyright{
