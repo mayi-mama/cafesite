@@ -26,10 +26,10 @@
                         <img src="img/Cafe Tsukishima logo.png" alt="logo">
                     </div>
                     <!--ハンバーガーメニュー-->
-                    <input type="checkbox" id="check" class="hamburger__input">
-                    <label for="check" class="hamburger__label"><span class="hamburger__line"></span></label>
+                    <input type="checkbox" id="js-hamburger" class="hamburger__input">
+                    <label for="js-hamburger" class="hamburger__label"><span class="hamburger__line"></span></label>
                     <div class="header__nav">
-                        <nav class="gnav">
+                        <nav class="gnav" id="js-nav">
                             <ul class="gnav__list">
                                 <li class="gnav__item">
                                     <a class="gnav__link" href="#about">ABOUT</a>
@@ -295,12 +295,12 @@
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="facebook__btn">
-                                   <i class="fa-brands fa-facebook" style="color: #146ebe;"></i>
+                                   <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="twitter__btn">
-                                    <i class="fa-brands fa-twitter" style="color: #74c0fc;"></i>
+                                    <i class="fa-brands fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="footer__item">
@@ -315,8 +315,8 @@
             </footer>
             <!--top page-->
             <div class="page-top">
-                <a class="page-top__icon">
-                    <span class="material-symbols-rounded">
+                <a class="page-top__link" id="js-page">
+                    <span class="material-symbols-rounded page-top__icon">
                         keyboard_arrow_up
                     </span>
                 </a>

@@ -1,10 +1,11 @@
 //ハンバーガーメニュー
-const hamburger = document.querySelector('#check');
-const gnav = document.querySelector('.gnav');
+const hamburger = document.querySelector('#js-hamburger');
+const gnav = document.querySelector('#js-nav');
 
 hamburger.addEventListener('click',function(){
-    hamburger.classList.toggle('active');
     gnav.classList.toggle('active');
+    /*確認　
+    hamburger.classList.toggle('active);*/
 });
 
 
@@ -17,3 +18,21 @@ const swiper = new Swiper(".swiper",{
         type:'bullets'
     },
 });
+
+//page-top
+const page = document.querySelector('#js-page');
+
+page.addEventListener('click', scroll_to_top);
+function scroll_to_top(){
+    window.scroll({top:0, behavior:'smooth'})
+};
+
+window.addEventListener('scroll', scroll_event);
+
+function scroll_event(){
+    if(window.pageYOffset < 200){
+        page.style.opacity = '0';
+    }else if(window.pageYOffset > 200){
+        page.style.opacity = '1'
+    };
+};
