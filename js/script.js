@@ -1,11 +1,21 @@
 //ハンバーガーメニュー
-const hamburger = document.querySelector('#js-hamburger');
+const ham = document.querySelector('#js-hamburger');
 const gnav = document.querySelector('#js-nav');
 
-hamburger.addEventListener('click',function(){
-    gnav.classList.toggle('active');
-    /*確認　
-    hamburger.classList.toggle('active);*/
+let done = true;
+ham.addEventListener("click",() => {
+    gnav.classList.add('active');
+    setTimeout(() => {
+        done = false;
+    },100)
+});
+document.addEventListener('click',() => {
+    if(done === false) {
+        gnav.classList.remove('active');
+        setTimeout(() => {
+            done = true;
+        },100);
+    }
 });
 
 
