@@ -42,8 +42,8 @@ img {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 60px;
     position: fixed;
+    height: 60px;
     z-index: 10;
     background-color: #fff;
     padding: 5px 0;
@@ -55,26 +55,20 @@ img {
 }
 
 /*ハンバーガーメニュー*/
-.hamburger__input{
-    display:none;
-}
-
-.hamburger__label{
+.hamburger__btn{
     position: fixed;
     top: 10px;
     right: 20px;
     width: 35px;
     height: 35px;
     background-color: #24A8BF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hamburger__line{
     display: block;
+    position: relative;
     height: 2px;
-    width: 20px;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -84,7 +78,7 @@ img {
     position: absolute;
     content: "";
     height: 2px;
-    width: 20px;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -109,7 +103,6 @@ img {
 .hamburger__input.active .hamburger__line::after{
     top: 50%;
     transform: rotate(-45deg);
-
 }
 
 .gnav.active{
@@ -122,9 +115,9 @@ img {
     height: 100%;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 5;
     background-color: #24A8BF;
-    transform: translateX(100%);
+    transform: translateX(200px);
 }
 
 .gnav__list{
@@ -146,7 +139,7 @@ img {
 }
 
 .swiper{
-    width:min(100%, 1170px);
+    width:min(100%, 1600px);
     height: 100%;
 }
 
@@ -171,7 +164,6 @@ img {
 .about__img{
     width: 100%;
     height: 100%;
-    margin-bottom: 15px;
 }
 
 .about__text{
@@ -179,9 +171,17 @@ img {
     font-size: 18px;
     line-height: 1.4;
     color: #707070;
-    margin-bottom: 40px;
 }
 
+.about-box__desc{
+    position: relative;
+    margin: -15px 20px;
+    margin-bottom: 40px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+}
 /*menu section*/
 .menu__list{
     display: flex;
@@ -230,6 +230,10 @@ img {
 }
 
 /*shop*/
+.shop__body{
+    padding: 0 20px;
+}
+
 .table-type01{
     font-size: 12px;
     width: 100%;
@@ -267,7 +271,11 @@ img {
 
 /*contact*/
 .contact__form{
-    margin-top: 30px;
+    border: solid 3px #F2DBE1;
+    box-shadow: 0 0 8px 0 #F2DBE1;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: 30px 20px 20px;
 }
 
 .form__title{
@@ -281,12 +289,12 @@ img {
 
 .form__require{
     font-size: 8px;
-    color:#FA0C14;
+    color:#d86bcc;
 }
 
 .form__any{
     font-size: 8px;
-    color:#0C24FA;
+    color:#6b82d8;
 }
 
 .form__item:not(:last-child){
@@ -298,9 +306,8 @@ img {
     color:#707070;
     border: solid 1px #707070;
     border-radius: 10px;
-    margin: 0 auto;
     padding: 5px;
-    width: 100%;
+    width: 50%;
 }
 
 .form__textArea{
@@ -350,20 +357,26 @@ img {
 
 /*sns icon*/
 .footer__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
+    border-radius: 50%;
 }
 
 .facebook__icon{
-    color: #1778f2;
-	background-color: #fff;
-    border-radius: 50%;
-    overflow: hidden;
+    color:#DCDCDC;
 }
 
 .twitter__icon{
-    color: #1da1f2;
+    color: #DCDCDC;
 }
+
+.insta__icon{
+    color: #DCDCDC;
+}
+
 
 /*copyright*/
 .copyright{
@@ -391,10 +404,221 @@ img {
     width: 30px;
     height: 30px;
     text-decoration: none;
-    border:solid 1px #707070;
+    box-shadow: 0 0 2px 0 #707070;
 }
 
 .page-top__icon{
     font-size: 20px;
+}
+
+@media screen and (min-width: 1080px){
+
+.container{
+    padding: 0 50px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/*primary heading*/
+.primary-heading{
+    font-size: 46px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+/*ヘッダー*/
+.header__inner{
+    height: 90px;
+    padding: 10px 20px;
+}
+
+.header__logo{
+    width :70px;
+    height: 70px;
+}
+
+
+/*
+.hamburger__btn{
+    display: none;
+}
+
+
+.gnav__list{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.gnav__link{
+    color:#707070;
+}
+*/
+
+/*swiper*/
+.mv{
+    margin-bottom: 60px;
+}
+
+.swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+  }
+
+
+/*about section*/
+.about__box{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.about__img{
+    width: 60%;
+    padding-left: 50px;
+}
+
+.about-box__desc{
+    position: absolute;
+    margin: 0;
+    right:50px;
+    bottom: -40px;
+    width: 450px;
+    padding: 70px;
+    
+}
+/*menu section*/
+.menu__list{
+    margin-bottom: 60px;
+    padding: 0 40px;
+}
+
+.menu__box{
+   box-sizing: border-box;
+   flex: 0 1 calc(100% / 3);
+}
+
+.menu__title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.menu__text{
+    font-size: 16px;
+}
+
+/*shop*/
+.shop__table{
+    width: 500px;
+}
+
+.table-type01{
+    font-size: 16px;
+}
+
+ .table-type01 th,
+ .table-type01 td {
+   padding: 25px;
+ }
+
+ .table-type01 td{
+    padding-left: 15px;
+ }
+
+
+.shop__body{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 0 40px;
+    margin-bottom: 60px;
+}
+
+.shop__map iframe{
+    width: 500px;
+    height:350px;
+}
+
+/*contact*/
+.contact__form{
+    margin-bottom: 60px;
+    padding: 60px 30px;
+}
+
+.form__title{
+    font-size: 18px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+
+.form__require{
+    font-size: 12px;
+}
+
+.form__any{
+    font-size: 12px;
+}
+
+.form__item:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.form__input,
+.form__textArea{
+    padding: 5px;
+    width: 50%;
+}
+
+.form__textArea{
+    min-width: 300px;
+    min-height: 200px;
+    padding: 20px;
+    color: #333;
+}
+
+.btn{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/*footer*/
+.footer{
+    height: 90px;
+}
+
+.footer__list{
+    column-gap: 30px;
+    padding: 5px 80px;
+}
+
+.footer__item{
+    width: 45px;
+    height: 45px;
+}
+
+/*copyright*/
+.copyright{
+    font-size: 15px;
+}
+
+/*page-top*/
+.page-top{
+    right: 25px;
+    bottom: 25px;
+}
+
+.page-top__link{
+    width: 45px;
+    height: 45px;
+}
+
+.page-top__icon{
+    font-size: 30px;
+}
 }
 

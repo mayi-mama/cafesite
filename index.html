@@ -25,8 +25,9 @@
                         <img src="img/Cafe Tsukishima logo.png" alt="logo">
                     </div>
                     <!--ハンバーガーメニュー-->
-                    <input type="checkbox" id="js-hamburger" class="hamburger__input">
-                    <label for="js-hamburger" class="hamburger__label"><span class="hamburger__line"></span></label>
+                    <button type="button" id="js-hamburger" class="hamburger__btn">
+                         <span class="hamburger__line"></span>
+                    </button>
                     <div class="header__nav">
                         <nav class="gnav" id="js-nav">
                             <ul class="gnav__list">
@@ -51,21 +52,21 @@
             <div class="mv">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="img/swiper_design5.jpg" alt="カフェの写真">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="img/swiper_design1.jpg" alt="コーヒーの写真">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="img/swiper_design2.jpg" alt="カフェモカ">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="img/swiper_design4.jpg" alt="紅茶">
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="img/swiper_design3.jpg" alt="カフェ">
-                      </div>
+                            <div class="swiper-slide">
+                               <img src="img/swiper2-1.jpg" alt="カフェの写真">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/swiper2-2.jpg" alt="コーヒーの写真">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/swiper2-3-1.jpg" alt="カフェモカ">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/swiper2-4 .jpg" alt="紅茶">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/swiper2-5.jpg" alt="カフェ">
+                            </div>
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
@@ -82,11 +83,13 @@
                                 <div class="about__img">
                                     <img src="img/about2-1.jpg" alt="カフェでほっとひといき">
                                 </div>
-                                <div class="about__text">
-                                    <p>
+                                <div class="about-box__desc" id="text">
+                                    <div class="about__text">
+                                       <p>
                                     「体にやさしいもの」を徹底的にこだわってメニューをつくっています。<br>
                                     日常の生活から離れて、ほっと一息できる場所になるように。
-                                    </p>
+                                       </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +167,8 @@
                                         </div>
                                         <div class="menu__text">
                                             <p>
-                                            妊婦さんや授乳婦さんも安全に飲める種類を揃えています
+                                            妊婦さんや授乳婦さんも<br>
+                                            安全に飲める種類を揃えています
                                             </p>
                                         </div>
                                     </div>
@@ -180,7 +184,8 @@
                                         </div>
                                         <div class="menu__text">
                                             <p>
-                                                日替わりの種類豊富なラインナップ
+                                                日替わりの<br>
+                                                種類豊富なラインナップ
                                             </p>
                                         </div>
                                     </div>
@@ -196,7 +201,7 @@
                                         </div>
                                         <div class="menu__text">
                                             <p>
-                                                きれいな色合いなマカロン多数<br>
+                                                おいしいマカロン!<br>
                                                 見栄えもばっちり
                                             </p>
                                         </div>
@@ -294,17 +299,17 @@
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="facebook__btn">
-                                   <i class="fa-brands fa-facebook facebook__icon"></i>
+                                    <i class="fa-brands fa-facebook fa-xl facebook__icon"></i>
                                 </a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="twitter__btn">
-                                    <i class="fa-brands fa-twitter twitter__icon"></i>
+                                    <i class="fa-brands fa-twitter fa-xl twitter__icon"></i>
                                 </a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="insta__btn">
-                                    <i class="fa-brands fa-instagram insta__icon"></i>
+                                    <i class="fa-brands fa-instagram fa-xl insta__icon"></i>
                                 </a>
                             </li>
                         </ul>

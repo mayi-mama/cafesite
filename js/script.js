@@ -46,3 +46,8 @@ function scroll_event(){
         page.style.opacity = '1'
     };
 };
+
+//fadeIn
+
+const text = document.querySelector('#text');
+
