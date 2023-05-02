@@ -153,7 +153,28 @@ img {
     background-color: #fff;
     height: 10px;
     width: 10px;
-  }
+}
+
+.mv__area{
+    position: relative;
+}
+
+.mv__textArea{
+    position:absolute;
+    color:#fff;
+    top: 80px;
+    left: 20px;
+}
+
+.mv__title{
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.mv__text{
+    font-size: 16px;
+}
+
 
 
 /*about section*/
@@ -181,6 +202,14 @@ img {
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+    opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 1.5s, transform 1s;
+}
+
+.about-box__desc.active {
+	opacity: 1;
+	transform: translateY(0px);
 }
 
 /*menu section*/
@@ -468,7 +497,22 @@ img {
 .swiper-pagination-bullet {
     height: 15px;
     width: 15px;
-  }
+ }
+
+ .mv__textArea{
+    top: 120px;
+    left: 90px;
+}
+
+
+.mv__title{
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+.mv__text{
+    font-size: 30px;
+}
 
 
 /*about section*/

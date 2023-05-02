@@ -46,3 +46,19 @@ const swiper = new Swiper(".swiper",{
         type:'bullets'
     },
 });
+
+//fadeIn
+ 
+window.onload=function(){
+    const scroll = document.querySelectorAll('.about-box__desc');
+     
+    const Animation = function() {
+      for(var i = 0; i < scroll.length; i++) {
+      var triggerMargin = 100;
+      if (window.innerHeight > scroll[i].getBoundingClientRect().top + triggerMargin) {
+      scroll[i].classList.add('active');
+      };
+      };
+      };
+      window.addEventListener('scroll', Animation);
+    }; 
