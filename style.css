@@ -175,13 +175,14 @@ img {
 
 .about-box__desc{
     position: relative;
-    margin: -15px 20px;
+    margin: -30px 20px;
     margin-bottom: 40px;
     padding: 40px 30px 30px 30px;
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
 }
+
 /*menu section*/
 .menu__list{
     display: flex;

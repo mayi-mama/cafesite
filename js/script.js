@@ -15,18 +15,7 @@ document.addEventListener('click',() => {
         setTimeout(() => {
             done = true;
         },100);
-    }
-});
-
-
-//swiper
-const swiper = new Swiper(".swiper",{
-    loop:true,
-    autoplay:true,
-    pagination: {
-        el: ".swiper-pagination", 
-        type:'bullets'
-    },
+    };
 });
 
 //page-top
@@ -44,10 +33,16 @@ function scroll_event(){
         page.style.opacity = '0';
     }else if(window.pageYOffset > 200){
         page.style.opacity = '1'
-    };
+ };
+
 };
 
-//fadeIn
-
-const text = document.querySelector('#text');
-
+//swiper
+const swiper = new Swiper(".swiper",{
+    loop:true,
+    autoplay:true,
+    pagination: {
+        el: ".swiper-pagination", 
+        type:'bullets'
+    },
+});
