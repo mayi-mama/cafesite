@@ -54,7 +54,7 @@ window.onload=function(){
      
     const Animation = function() {
       for(var i = 0; i < scroll.length; i++) {
-      var triggerMargin = 100;
+      var triggerMargin = 150;
       if (window.innerHeight > scroll[i].getBoundingClientRect().top + triggerMargin) {
       scroll[i].classList.add('active');
       };
