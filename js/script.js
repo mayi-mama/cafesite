@@ -1,23 +1,3 @@
-//ハンバーガーメニュー
-const ham = document.querySelector('#js-hamburger');
-const gnav = document.querySelector('#js-nav');
-
-let done = true;
-ham.addEventListener("click",() => {
-    gnav.classList.add('active');
-    setTimeout(() => {
-        done = false;
-    },100)
-});
-document.addEventListener('click',() => {
-    if(done === false) {
-        gnav.classList.remove('active');
-        setTimeout(() => {
-            done = true;
-        },100);
-    };
-});
-
 //page-top
 const page = document.querySelector('#js-page');
 
@@ -62,3 +42,23 @@ window.onload=function(){
       };
       window.addEventListener('scroll', Animation);
     }; 
+
+//ハンバーガーメニュー
+const ham = document.querySelectorAll('#js-hamburger');
+const gnav = document.querySelector('#js-nav');
+
+let done = true;
+ham.addEventListener("click",() => {
+    gnav.classList.add('active');
+    setTimeout(() => {
+        done = false;
+    },100)
+});
+document.addEventListener('click',() => {
+    if(done === false) {
+        gnav.classList.remove('active');
+        setTimeout(() => {
+            done = true;
+        },100);
+    };
+});
