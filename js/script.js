@@ -44,17 +44,17 @@ window.onload=function(){
     }; 
 
 //ハンバーガーメニュー
-const ham = document.querySelectorAll('#js-hamburger');
+const ham = document.querySelector('#js-hamburger');
 const gnav = document.querySelector('#js-nav');
 
 let done = true;
-ham.addEventListener("click",() => {
+ham.addEventListener('click', () =>{
     gnav.classList.add('active');
     setTimeout(() => {
         done = false;
     },100)
 });
-document.addEventListener('click',() => {
+document.addEventListener('click', () =>{
     if(done === false) {
         gnav.classList.remove('active');
         setTimeout(() => {
@@ -62,3 +62,4 @@ document.addEventListener('click',() => {
         },100);
     };
 });
+

@@ -132,7 +132,7 @@ img {
 
 .about__text{
     text-align: center;
-    font-size: 18px;
+    font-size: max(0.5vw, 22px);
     line-height: 1.4;
     color: #707070;
 }
@@ -141,13 +141,13 @@ img {
     position: absolute;
     margin: 0;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 20px 20px;
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
-    right :70px;
-    bottom:  -40px;
-    width: 450px;
+    right :50px;
+    bottom:  -80px;
+    width: max(2.0vw , 400px);
     opacity: 0;
 	transform: translateY(30px);
 	transition: opacity 1.5s, transform 1s;
