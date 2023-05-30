@@ -22,20 +22,29 @@ img {
 }
 
 .container{
-    padding: 0 20px;
+    padding: 25px 20px;
     max-width: 1170px;
     margin: 0 auto;
 }
 
 /*primary heading*/
-.primary-heading{
+.section-heading{
     text-align: center;
-    font-size: 24px;
-    line-height: 1.5;
-    color:#24A8BF;
     margin-bottom: 25px;
 }
 
+.primary-heading{
+    font-size: 24px;
+    line-height: 1.5;
+    color:#24A8BF;
+    margin-bottom: 5px;
+}
+
+.heading-subtitle{
+    font-size: 10px;
+    color:#707070;
+
+}
 /*ヘッダー*/
 .header__inner{
     display: flex;
@@ -47,11 +56,6 @@ img {
     z-index: 10;
     background-color: #fff;
     padding: 10px 20px;
-}
-
-.header__logo{
-    width :60px;
-    height: 30px;
 }
 
 /*ハンバーガーメニュー*/
@@ -137,13 +141,10 @@ img {
 }
 
 /*swiper*/
-.mv{
-    margin-bottom: 40px;
-}
-
 .swiper{
-    width:min(100%, 760px);
+    width:100%;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 .swiper-slide{
@@ -169,10 +170,20 @@ img {
     left: 20px;
 }
 
+.mv__area2{
+    position: relative;
+}
+
+.mv__textArea2{
+    position:absolute;
+    color:#fff;
+    bottom: 20px;
+    right: 10px;
+}
+
 
 .mv__img{
-    box-sizing: cover;
-    height:250px;
+    height:100%;
 }
 
 .mv__title{
@@ -205,35 +216,37 @@ img {
 .about-box__desc{
     position: relative;
     margin: -30px 20px;
-    margin-bottom: 40px;
     padding: 40px 30px 30px 30px;
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
-    opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 1.5s, transform 1s;
 }
 
-.about-box__desc.active {
+#js-fadeIn{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s, transform 1s;
+}
+
+#js-fadeIn.active {
 	opacity: 1;
-	transform: translateY(0px);
+    transform:translateY(0px) ;
 }
 
 /*menu section*/
 .menu__list{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    row-gap: 10px;
+    justify-content: space-between;
 }
 
 .menu__box{
    box-sizing: border-box;
-   flex: 0 1 calc(100% / 2);
+   width: calc((100% - 20px - 20px)/ 2);
 }
 
 .menu__box-img{
-    max-width: 150px;
     width: 100%;
     margin: auto;
     cursor: pointer;
@@ -262,7 +275,7 @@ img {
 }
 
 .menu__text{
-    font-size: 14px;
+    font-size: max(1.0vw, 12px);
     line-height: 1.4;
     letter-spacing: 0.05em;
 }
@@ -299,7 +312,6 @@ img {
 
 .shop__map{
     margin-top: 25px;
-    margin-bottom: 40px;
 }
 
 .shop__map iframe{
@@ -307,32 +319,49 @@ img {
     height: 100%;
 }
 
-/*contact*/
-.contact__form{
-    border: solid 3px #F2DBE1;
-    box-shadow: 0 0 8px 0 #F2DBE1;
+  /*contact form*/
+  .contact__form{
+    border: solid 3px #24A8BF;
+    box-shadow: 0 0 4px 0 #24A8BF;
     border-radius: 8px;
     margin-bottom: 40px;
-    padding: 30px 20px 20px;
+    padding: 30px 20px 10px;
 }
 
 .form__title{
-    display:block;
-    font-size: 12px;
-    color:#707070;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
+  display:block;
+  position: relative;
+  font-size: 12px;
+  color:#707070;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.form__require{
-    font-size: 8px;
-    color:#d86bcc;
+.form__title::after{
+  position: absolute;
+  content: '*必須';
+  font-size: 10px;
+  left: 90px;
+  bottom: 0;
+  color:#D6909D;
 }
 
-.form__any{
-    font-size: 8px;
-    color:#6b82d8;
+.form__title2{
+  display:block;
+  position: relative;
+  font-size: 12px;
+  color:#727171;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form__title2::after{
+  position: absolute;
+  content: '*任意';
+  font-size: 10px;
+  left: 90px;
+  bottom: 0;
+  color:#8ca6d1;
 }
 
 .form__item:not(:last-child){
@@ -349,23 +378,26 @@ img {
 }
 
 .form__textArea{
-    min-width: 300px;
+    width: 80%;
+    min-width: 200px;
     min-height: 70px;
     padding: 10px;
-    color: #333;
+    resize: none;
+    color:#707070;
 }
+
 
 .btn{
     display:block;
-    background-color: #F2DBE1;
-    box-shadow: 1px 3px 6px rgb(0, 0, 0, 0.16);
-    border:solid 3px #F2DBE1;
-    border-radius: 17px;
+    background-color: #24A8BF;
+    box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.16);
+    border:solid 3px #24A8BF;
+    border-radius: 10px;
     padding: 5px;
     font-size: 14px;
     line-height: 1.2;
     margin: 0 auto;
-    color:#707070;
+    color:#FFFFFF;
 }
 
 .btn:hover{

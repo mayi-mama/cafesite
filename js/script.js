@@ -30,7 +30,7 @@ const swiper = new Swiper(".swiper",{
 //fadeIn
  
 window.onload=function(){
-    const scroll = document.querySelectorAll('.about-box__desc');
+    const scroll = document.querySelectorAll('#js-fadeIn');
      
     const Animation = function() {
       for(var i = 0; i < scroll.length; i++) {

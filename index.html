@@ -23,7 +23,9 @@
             <!--ヘッダー-->
             <header class="header">
                 <div class="header__inner">
-                    <h1 class="header__logo">Cafe Tsukishima</h1>
+                    <div class="header__logo">
+                        <h1>Cafe Tsukishima</h1>
+                    </div>
                     <!--ハンバーガーメニュー-->
                     <button type="button" id="js-hamburger" class="hamburger__btn">
                          <span class="hamburger__line"></span>
@@ -51,14 +53,14 @@
             <!--メインビジュアル-->
             <div class="mv">
                 <div class="swiper">
-                    <div class="swiper-wrapper">
+                        <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="mv__area">
                                     <div class="mv__textArea">
                                         <h2 class="mv__title">Cafe<br>Tshukishima</h2>
                                         <p class="mv__text">ほっと一息できる空間を</p>
                                     </div>
-                                    <img class="mv__img" src="img/swiper2-1.jpg" alt="カフェの写真">
+                                    <img class="mv__img" src="img/swiper2-1.jpg" alt="Cafe Tsukishimaの内装">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -67,7 +69,7 @@
                                         <h2 class="mv__title">Cafe<br>Tshukishima</h2>
                                         <p class="mv__text">自慢のコーヒーをぜひ</p>
                                     </div>
-                                    <img class="mv__img" src="img/swiper2-2.jpg" alt="コーヒーの写真">
+                                    <img class="mv__img" src="img/swiper2-2.jpg" alt="Cafe TSukishimaのコーヒー">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -76,16 +78,16 @@
                                         <h2 class="mv__title">Cafe<br>Tshukishima</h2>
                                         <p class="mv__text">お気に入りのラテアートを</p>
                                     </div>
-                                    <img class="mv__img" src="img/swiper2-3-1.jpg" alt="カフェモカ">
+                                    <img class="mv__img" src="img/swiper2-3-1.jpg" alt="Cafe Tsukishimaのカフェモカ">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="mv__area">
-                                    <div class="mv__textArea">
+                                <div class="mv__area2">
+                                    <div class="mv__textArea2">
                                         <h2 class="mv__title">Cafe<br>Tshukishima</h2>
                                         <p class="mv__text">当店自慢のダージリンティーを</p>
                                     </div>
-                                    <img class="mv__img" src="img/swiper2-4 .jpg" alt="紅茶">
+                                    <img class="mv__img" src="img/swiper2-4 .jpg" alt="Cafe Tsukishimaの紅茶">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -94,12 +96,12 @@
                                         <h2 class="mv__title">Cafe<br>Tshukishima</h2>
                                         <p class="mv__text">テレワークスペースを完備</p>
                                     </div>
-                                    <img class="mv__img" src="img/swiper2-5.jpg" alt="カフェ">
+                                    <img class="mv__img" src="img/swiper2-5.jpg" alt="Cafe　Tsukishimaのワーキングスペース">
                                 </div>
                             </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                </div> 
             </div>
             <main class="content">
                 <!--about section-->
@@ -107,13 +109,14 @@
                     <div class="container">
                         <div class="section-heading">
                             <h2 class="primary-heading">About</h2>
+                            <div class="heading-subtitle">わたしたちについて</div>
                         </div>
                         <div class="about__body">
                             <div class="about__box">
                                 <div class="about__img">
                                     <img src="img/about2-1.jpg" alt="カフェでほっとひといき">
                                 </div>
-                                <div class="about-box__desc">
+                                <div class="about-box__desc" id="js-fadeIn">
                                     <div class="about__text">
                                        <p>
                                     「体にやさしいもの」を徹底的にこだわってメニューをつくっています。<br>
@@ -131,10 +134,11 @@
                         <div class="section-heading">
                             <div class="section-heading">
                                 <h2 class="primary-heading">Menu</h2>
+                                <div class="heading-subtitle">メニュー</div>
                             </div>
                         </div>
                         <div class="menu__body">
-                            <div class="menu__list">
+                            <div class="menu__list" id="js-fadeIn">
                                 <!--コーヒー-->
                                 <div class="menu__box">
                                     <div class="menu__box-img">
@@ -247,6 +251,7 @@
                         <div class="section-heading">
                             <div class="section-heading">
                                 <h2 class="primary-heading">Shop</h2>
+                                <div class="heading-subtitle">アクセス</div>
                             </div>
                         </div>
                         <div class="shop__body">
@@ -287,31 +292,23 @@
                         <div class="section-heading">
                             <div class="section-heading">
                                 <h2 class="primary-heading">Contact</h2>
+                                <div class="heading-subtitle">お問い合わせ</div>
                             </div>
                         </div>
                         <div class="contact__body">
                             <div class="contact__form">
-                                <form class="form">
+                                <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuSYPtql2rzTNgWTGxZpXYEubSEa4fNFjoFaAc237uYA0BJw/formResponse">
                                     <div class="form__item">
-                                        <label for="name" class="form__title">
-                                            お名前
-                                            <span class="form__require">*必須</span>
-                                        </label>
-                                        <input type="text" id="name" name="name" required class="form__input">
+                                        <label for="name" class="form__title">お名前</label>
+                                        <input type="text" id="name" name="entry.558076412" required class="form__input" placeholder="山田太郎">
                                     </div>
                                     <div class="form__item">
-                                            <label for="email" class="form__title">
-                                                メールアドレス
-                                                <span class="form__require">*必須</span>
-                                            </label>
-                                            <input type="text" id="email" name="email" required class="form__input">
+                                            <label for="email" class="form__title">メールアドレス</label>
+                                            <input type="text" id="email" name="entry.1150473128" required class="form__input" placeholder="example@mail.com">
                                     </div>
                                     <div class="form__item">
-                                        <label for="comment" class="form__title">
-                                            メッセージ
-                                            <span class="form__any">*任意</span>
-                                        </label>
-                                        <textarea id="comment" nama="comment" placeholder="ご自由にお書きください" class="form__textArea"></textarea>
+                                        <label for="comment" class="form__title2">メッセージ</label>
+                                        <textarea id="comment" nama="entry.1464787281" placeholder="ご自由にお書きください" class="form__textArea"></textarea>
                                     </div>
                                     <div class="form__btn">
                                         <button type="submit" class="btn">送信ボタンを押す</button>
