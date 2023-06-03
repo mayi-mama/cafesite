@@ -98,17 +98,17 @@ img {
     bottom: 8px;
 }
 
-.hamburger__btn.active .hamuburger__line{
+.hamuburger__line.active{
     top: 50%;
     transform:rotate(45deg);
     color:#fff;
 }
 
-.hamburger__btn.active .hamburger__line::before{
+.hamburger__line::before.active{
     opacity: 0;
 }
 
-.hamburger__btn.active .hamburger__line::after{
+.hamburger__line::after.active{
     top: 50%;
     transform: rotate(-45deg);
     color: #fff;

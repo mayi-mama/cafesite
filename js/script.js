@@ -50,6 +50,7 @@ const gnav = document.querySelector('#js-nav');
 let done = true;
 ham.addEventListener('click', () =>{
     gnav.classList.add('active');
+    ('.hamburger__line').classList.add('active');
     setTimeout(() => {
         done = false;
     },100)
@@ -57,9 +58,9 @@ ham.addEventListener('click', () =>{
 document.addEventListener('click', () =>{
     if(done === false) {
         gnav.classList.remove('active');
+        ('.hamburger__line').classList.remove('active');
         setTimeout(() => {
             done = true;
         },100);
     };
 });
-
